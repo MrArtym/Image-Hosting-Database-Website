@@ -1,15 +1,29 @@
 
+/*
+Leon Zheng
+/*
+This is the the css doc for formatting 
+the laptop screen in homepage 
+which screen width> 768px
+*/
 
 @media(min-width: 768px){
-
+    
     header .link-wrapper{
         max-height: 22px;
-        margin-right: 0px;
+        justify-content: flex-end;
+    }
+
+    hr{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-width: 5px;
+
     }
 
     header .title-wrapper{
         margin-left: 0;
-
     }
 
 
