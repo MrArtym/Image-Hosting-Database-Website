@@ -1,3 +1,4 @@
+<!-- Vivek Acharya -->
 <?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -30,7 +31,7 @@ if ($uploadOk == 0) {
 }
 
 // Convert image to binary data
-$img = fopen($target_file, "rb");
+// $img = fopen($target_file, "rb");
 
 
 // SQL STUFF:
@@ -43,7 +44,8 @@ $database_name = "images";
 try{
     $conn = new PDO("mysql:host=$database_host;dbname=$database_name", $user_name, $password); // Put this inside try block later..
 
-    $blob = base64_encode(file_get_contents($target_file));//fopen($target_file, "rb");
+    // $blob = base64_encode(file_get_contents($target_file));//fopen($target_file, "rb");
+    $blob = fopen($target_file, "rb");
     $sql = "INSERT INTO images VALUES(NULL, NULL, :title, :data, 'CAPTION OF THE FIRST IMAGE');";
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
@@ -63,44 +65,6 @@ try{
 }
 $conn = null;
 
-
-// $database_string = "mysql:". $database_name . ";host:" . $database_host;
-// try{
-//     $conn = new PDO($database_string, $user_name, $password); // Put this inside try block later..
-
-//     $blob = fopen($target_file, "rb");
-//     $sql = "INSERT INTO images VALUES(NULL, NULL, ?, ?, CAPTION OF THE FIRST IMAGE:title, :data,". "'CAPTION OF THE FIRST IMAGE');";
-
-//     $title = basename($target_file);
-//     $statement = $conn->prepare($sql);
-//     $statement->bindParam(":title", $title);
-//     $statement->bindParam(":data", $blob, PDO::PARAM_LOB); // PARAM_LOB instructs PDO to map the data as a stream..
-
-//     $statement->execute();
-//     echo "New records created successfully!";
-
-//     $sql = "SELECT * FROM images;";
-//     $results = $conn->exec($sql);
-//     echo ALL DONE!;
-// } catch (PDOException $e){
-//     echo "Error: ". $e->getMessage();
-// }
-// $conn = new mysqli($server_name, $user_name, $password, $database_name);
-// // Check connection
-// if ($conn->connect_error){
-//     die("Connection to database failed: " . $conn->connect_error);
-// }
-
-
-// $sql = "INSERT INTO images (title, data, caption) VALUES(" . (string)basename($target_file) . (string)$data . "TEST CAPTION!)";
-
-// if ($conn->query($sql) === TRUE){
-//     echo "New image created successfully";
-// } else {
-//     echo "Error: ". $sql . "<br>". $conn->error;
-// }
-// $conn->close();
-// echo $data;
 //  References: https://www.w3schools.com/php7/php7_file_upload.asp
 ?>
 
