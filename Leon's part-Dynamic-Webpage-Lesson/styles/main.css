@@ -1,10 +1,16 @@
+/*
+Leon Zheng
+/*
+This is the the css doc for formatting 
+the mobile screen in homepage 
+which screen width< 768px
+*/
+
+
 header{
     display: flex;
     display: block;
     flex-direction: row;
-
-
-
 }
 
 
@@ -12,12 +18,11 @@ header{
 header .link-wrapper{
     display: block;
     display: flex;
-    flex-direction: row;
-
-
+    flex-direction: row;  
 }
 
-
+/*this is a divider 
+which shows on the webpage*/
 .divider{
     width: 180px;
     font-size: 14px;
@@ -35,8 +40,6 @@ header .link-wrapper{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 .deco-line{
@@ -48,7 +51,7 @@ header .link-wrapper{
 }
 
 
-
+/*box for image part*/
 .img-wrapper{
     background-image: url('../images/night.jpg');
     background-position: initial;
@@ -93,6 +96,55 @@ header .link-wrapper{
     margin-bottom: 10px;
     font-size: 20px;
 }
+/*
+search bar on the top
+*/
+.link-wrapper form input[type="text"]{
+    max-width: 350px;   
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+    border: 1px solid #445f77;
+    background: black;
+    color: white;
+    
+    font-size: 12px;
+    line-height: 18px;  
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: border-color 400ms;
+    transition: width 1000ms; 
+}
+
+/*focus is after clicked shows up*/
+.link-wrapper form input[type="text"]:focus{
+    border-color: white;
+  
+}
+/*hover is move on the target shows up*/
+.link-wrapper form input[type="text"]:hover{
+    border-color: white;
+    width: 350px;
+}
+
+.link-wrapper form input[type="submit"]{
+    width: 150px;
+    height: 20px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-color: red;
+    margin-left: 0;
+}
+
+/*
+suggestion bar on the bottom
+*/
 
 .newsletter-wrapper form input[type="text"]{
     max-width: 350px;   
@@ -100,7 +152,7 @@ header .link-wrapper{
     height: 20px;
     outline: 0;
     padding: 18px 24px; /*18 for top&bottom, 24 foe left right*/
-    border: 1px solid #445f77;
+    border: 5px solid #445f77;
     background-color: transparent;
     color: white;
     font-size: 12px;
