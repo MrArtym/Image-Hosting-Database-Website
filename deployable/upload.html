@@ -1,0 +1,65 @@
+<!--Leon Zheng -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            upload image
+        </title>
+        <link rel="stylesheet" href="./styles/upload.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <script>
+            //alert('This website will need you upload the image');
+            console.log('console running...')
+            
+        </script>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img class="logo" src="./images/night.jpg" />
+                </a>
+            </div>
+
+            <div class="logo-text-wrapper">
+                <h1>
+                    <(￣︶￣)↗[click me return to homepage!] 
+                </h1> 
+            </div>
+
+            <form class="searching-form">
+                <input type="text" placeholder="keywords in here" />
+                <input type="submit" value="sumbit" />
+            </form>
+
+        </div>
+
+        <hr>
+
+        
+
+
+        <div class="upload-wrapper">
+            <div class="divider">
+                <div class="deco-line"></div>
+                Upload your image in here
+                <div class="deco-line"></div>
+            </div>
+
+            <h1>upload image by clicked the button</h1>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+            </form>
+        </div>
+        
+
+    </body>
+
+
+</html>

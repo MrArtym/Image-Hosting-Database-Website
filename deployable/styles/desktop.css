@@ -1,0 +1,83 @@
+
+/*
+Leon Zheng
+/*
+This is the the css doc for formatting 
+the laptop screen in homepage 
+which screen width> 768px
+*/
+
+@media(min-width: 768px){
+    
+    header .link-wrapper{
+        max-height: 22px;
+        justify-content: flex-end;
+    }
+
+    hr{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-width: 5px;
+
+    }
+
+    header .title-wrapper{
+        margin-left: 0;
+    }
+
+
+    .img-wrapper{
+        background-image: url('../images/night.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+        
+
+    /*able to scorll the image*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .newsletter-wrapper form input[type="submit"]{
+        margin-top: 0;
+    }
+
+    .newsletter-thank-you{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .newsletter-thank-you h3{
+        margin-bottom: 0;
+
+        
+    }
+
+    .newsletter-wrapper h3{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+}
