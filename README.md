@@ -1,5 +1,5 @@
 # Image-Hosting-Database-Website
-An education package for teaching dynamic webpages: HTML, CSS, and PHP scripts calling MYSQL. The overall project is an image uploading website. The project works with XAMPP and is designed for Alberta grade 12 Computer Science.
+An education package for teaching dynamic webpages: HTML, CSS, and PHP scripts calling MYSQL. The overall project is an image uploading website. The project works with XAMPP (or MAMP if you prefer) and is designed for Alberta grade 12 Computer Science.
 
 ---
 
@@ -7,10 +7,12 @@ An education package for teaching dynamic webpages: HTML, CSS, and PHP scripts c
 
 ---
 
+**Educator Resources:** See the Educator Resources folder for examples, resources, and a possible assignment.
+
+---
+
 **Setup:**
 To quickly set up this application, download <a href="https://www.apachefriends.org/download.html">XAMPP</a> for your appropriate operating system. Place the files in the newly installed XAMPP htdocs folder. Run XAMPP and Start both Apache and MYSQL. From this interface, run MYPHPADMIN from the MYSQL options. 
-
-UNDER CONSTRUCTION
 
 Concepts:
 Client-Server Upload/Download interaction
