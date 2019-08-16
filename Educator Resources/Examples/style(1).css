@@ -1,0 +1,14 @@
+/* Comments appear like this in a CSS document
+They can be multiple lines */
+
+.first_paragraph{
+    float:left;
+}
+
+.second_paragraph{
+    float right;   
+}
+
+.number{
+ color:green;   
+}

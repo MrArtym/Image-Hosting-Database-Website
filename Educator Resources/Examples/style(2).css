@@ -1,0 +1,35 @@
+/*****************************************
+*
+*
+*
+*		CSS 
+*
+*
+*
+*
+******************************************/
+
+/* Div for the main menu */
+div#left{
+	 background-color: black;
+	 color:red;
+	 float:left;
+}
+
+div#right{
+	background-color: #b0c4de;
+	 color:blue;
+	 float:right;
+}
+
+.left_para{
+	float:left;
+}
+
+.right_para{
+	float:right;	
+}
+
+.number{
+	color:green;
+}

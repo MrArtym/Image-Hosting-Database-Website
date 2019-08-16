@@ -1,0 +1,49 @@
+/*****************************************
+*
+*
+*
+*		CSS 
+*
+*
+*
+*
+******************************************/
+
+/* Set the style for the overall 
+ * body section of your document
+ * I'm setting it to 100% of the viewport height
+   Making sure there's not margin (or whitespace)
+ */
+body{
+	height:100vh;
+	margin:0;
+	/* Troubleshooting: set to yellow to verify navBar and content is taking up full screen*/
+	background-color:yellow;
+}
+
+/* Left div. for navigation bar 
+ * Takes up overall 15% with padding*/
+#navBar{
+	width: 11%;
+	padding:2%; /* 2% padding on each side; 4% horizontal overall */ 
+	background-color:red;
+	height:100%;
+	float:left; /* Item floats left */ 
+	text-align:center;
+}
+/* This bar takes up 85% overall with the padding.*/
+#content{
+	float:left; /* Item floats left beside nav bar*/ 
+	width: 81%;
+	padding:2%; /* 2% padding on each side; 4% horizontal overall */ 
+	background-color:blue;
+	height:100%;
+}
+
+.perceptionImg{
+		/* You can put this max-width attribute on any container (div) */
+		max-width:100%;
+		height: auto;
+		width:auto\9; /* ie8 */
+}
+

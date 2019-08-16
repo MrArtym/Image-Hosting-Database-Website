@@ -1,0 +1,32 @@
+/*******************
+*
+*		CSS
+*
+*
+*******************/
+
+/*Div for left menu*/
+div#left{
+	background-color: black;
+	color:red;
+	float:left;	
+}
+
+div#right{
+	background-color: #b0c4de;
+	color:blue;
+	float:right;
+}
+
+.leftPara{
+	float:left;
+}
+
+.rightPara{
+	float:right;
+}
+
+.meIdentifier{
+	color:green;
+	
+}
